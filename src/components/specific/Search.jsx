@@ -44,7 +44,7 @@ const Search = () => {
       searchUser(search.value)
         .then(({ data }) => setUsers(data.users))
         .catch((e) => console.log(e))
-        .finally(searchCloseHandler)
+       
     }, 1000);
 
     return () => {
